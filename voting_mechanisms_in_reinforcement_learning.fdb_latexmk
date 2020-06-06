@@ -1,7 +1,14 @@
 # Fdb version 3
-["pdflatex"] 1591394475 "/Users/jost/Workspace/Seminar CI Paper/voting_mechanisms_in_reinforcement_learning.tex" "/Users/jost/Workspace/Seminar CI Paper/voting_mechanisms_in_reinforcement_learning.pdf" "voting_mechanisms_in_reinforcement_learning" 1591394475
-  "/Users/jost/Workspace/Seminar CI Paper/voting_mechanisms_in_reinforcement_learning.aux" 1591394475 2481 8b7014fac91a90ac082d5ba9a8faacaf ""
-  "/Users/jost/Workspace/Seminar CI Paper/voting_mechanisms_in_reinforcement_learning.tex" 1591394475 14020 57047935a919178c91e35143fb100158 ""
+["bibtex voting_mechanisms_in_reinforcement_learning"] 1591455071 "voting_mechanisms_in_reinforcement_learning.aux" "voting_mechanisms_in_reinforcement_learning.bbl" "voting_mechanisms_in_reinforcement_learning" 1591455071
+  "IEEtran.bst" 0 -1 0 ""
+  "references.bib" 0 -1 0 ""
+  "voting_mechanisms_in_reinforcement_learning.aux" 1591455071 2012 cdd3559c84e3e89bc5d7241ad048d5e0 "pdflatex"
+  (generated)
+  "voting_mechanisms_in_reinforcement_learning.blg"
+  "voting_mechanisms_in_reinforcement_learning.bbl"
+["pdflatex"] 1591455071 "/Users/jost/Workspace/Seminar CI Paper/voting_mechanisms_in_reinforcement_learning.tex" "/Users/jost/Workspace/Seminar CI Paper/voting_mechanisms_in_reinforcement_learning.pdf" "voting_mechanisms_in_reinforcement_learning" 1591455071
+  "/Users/jost/Workspace/Seminar CI Paper/voting_mechanisms_in_reinforcement_learning.aux" 1591455071 2012 cdd3559c84e3e89bc5d7241ad048d5e0 ""
+  "/Users/jost/Workspace/Seminar CI Paper/voting_mechanisms_in_reinforcement_learning.tex" 1591455070 12443 446a266a871eac59163845d995225c4e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -92,11 +99,12 @@
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
   "IEEEtran.cls" 1440632924 288304 b67b6fc6c2abb39f9b461923f5199343 ""
   "fig1.png" 1571299972 4535 3b4c70b1b9361fad686e8d234c8fe506 ""
-  "voting_mechanisms_in_reinforcement_learning.aux" 1591394475 2481 8b7014fac91a90ac082d5ba9a8faacaf "pdflatex"
-  "voting_mechanisms_in_reinforcement_learning.tex" 1591394475 14020 57047935a919178c91e35143fb100158 ""
+  "voting_mechanisms_in_reinforcement_learning.aux" 1591455071 2012 cdd3559c84e3e89bc5d7241ad048d5e0 "pdflatex"
+  "voting_mechanisms_in_reinforcement_learning.bbl" 1591454941 1053 095ebfa34e74ee9f16346373745fa909 "bibtex voting_mechanisms_in_reinforcement_learning"
+  "voting_mechanisms_in_reinforcement_learning.tex" 1591455070 12443 446a266a871eac59163845d995225c4e ""
   (generated)
-  "/Users/jost/Workspace/Seminar CI Paper/voting_mechanisms_in_reinforcement_learning.pdf"
-  "voting_mechanisms_in_reinforcement_learning.pdf"
-  "/Users/jost/Workspace/Seminar CI Paper/voting_mechanisms_in_reinforcement_learning.log"
   "voting_mechanisms_in_reinforcement_learning.aux"
+  "/Users/jost/Workspace/Seminar CI Paper/voting_mechanisms_in_reinforcement_learning.log"
   "voting_mechanisms_in_reinforcement_learning.log"
+  "voting_mechanisms_in_reinforcement_learning.pdf"
+  "/Users/jost/Workspace/Seminar CI Paper/voting_mechanisms_in_reinforcement_learning.pdf"

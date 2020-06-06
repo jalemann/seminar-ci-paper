@@ -187,6 +187,10 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmbi7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmbi8r.tfm
+INPUT /Users/jost/Workspace/Seminar CI Paper/voting_mechanisms_in_reinforcement_learning.bbl
+INPUT /Users/jost/Workspace/Seminar CI Paper/voting_mechanisms_in_reinforcement_learning.bbl
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT /Users/jost/Workspace/Seminar CI Paper/voting_mechanisms_in_reinforcement_learning.aux
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
