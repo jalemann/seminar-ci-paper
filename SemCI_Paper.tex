@@ -21,20 +21,25 @@ jost.alemann@ovgu.de}
 
 \maketitle
 
+%ABSTRACT
 \begin{abstract}
 This paper aims to deliver an overview over voting mechanisms used in reinforcement learning.
 Voting mechanisms are first introduced to the reader and then explained in more detail by
 describing usage examples and experiments from current research. 
-
 \end{abstract}
 
 \begin{IEEEkeywords}
 voting, reinforcement learning, multi-agent systems
 \end{IEEEkeywords}
 
+% INTRODUCTION
+    % Motivation – Why is our research interesting
+    % Problem – Where is a lack of knowledge
+    % Idea – What solution do you present
+    % Outline – How do you explain your insight
 \section{Introduction}
 In multi-agent settings there are a number of mechanisms that allow for interaction between several agents.
-One of these mechanisms is voting which enables a distributed decision process where multiple agents decide which actions to take.
+One of these mechanisms is voting which enables a distributed decision process where multiple agents decide on which actions to take.
 \newline
 However designing a voting mechanism is non-trivial since the voting system has to consider different aspects like security, fairness and robustness.
 Arrow's Impossibility Theorem even states that voting mechanisms cannot be designed to be completely fair.
@@ -43,7 +48,8 @@ Ongoing research constantly tries to improve the security, robustness and fairne
 To give an overview over voting mechanisms in reinforcement learning Section \ref{2BasicPrinciples} introduces basic principles and constraints of voting systems.
 Section \ref{3RelatedWork} describes related work to highlight use cases of voting mechanisms in reinforcement learning as well as ongoing research trying to improve such mechanisms.
 
-
+% BASIC PRINCIPLES
+    % Tell the readers about definitions, foundations that are used
 \section{Basic Priniciples}\label{2BasicPrinciples}
 \begin{itemize}
     \item Robert's Rules of Order (Newly Revised) (RONR)
@@ -59,6 +65,10 @@ Section \ref{3RelatedWork} describes related work to highlight use cases of voti
     \end{itemize}
 \end{itemize}
 
+% RELATED WORK
+    % How have other researchers tackled the problem
+    % Outline benefits and downsides of other methods
+    % Give a good structure to the current state of the art
 \section{Related Work}\label{3RelatedWork}
 
 \bibliographystyle{IEEtran}
