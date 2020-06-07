@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex SemCI_Paper"] 1591482947 "SemCI_Paper.aux" "SemCI_Paper.bbl" "SemCI_Paper" 1591534559
+["bibtex SemCI_Paper"] 1591545677 "SemCI_Paper.aux" "SemCI_Paper.bbl" "SemCI_Paper" 1591555644
   "IEEtran.bst" 0 -1 0 ""
-  "SemCI_Paper.aux" 1591534370 415 89a0a42994a18d591c0bc5ddcdc612e5 "pdflatex"
+  "SemCI_Paper.aux" 1591555644 561 6688b3bf9706ad17885fd18ce41708cf "pdflatex"
   "refs.bib" 1591454290 341 718af09e6cd07216e4e10d040fd67ff1 ""
   (generated)
   "SemCI_Paper.blg"
   "SemCI_Paper.bbl"
-["pdflatex"] 1591534370 "/Users/jost/Workspace/Seminar CI Paper/SemCI_Paper.tex" "/Users/jost/Workspace/Seminar CI Paper/SemCI_Paper.pdf" "SemCI_Paper" 1591534559
-  "/Users/jost/Workspace/Seminar CI Paper/SemCI_Paper.aux" 1591534370 415 89a0a42994a18d591c0bc5ddcdc612e5 ""
-  "/Users/jost/Workspace/Seminar CI Paper/SemCI_Paper.tex" 1591534558 3365 a0379c9fa4fbe8c7c5a8b5301f910cfd ""
+["pdflatex"] 1591555643 "/Users/jost/Workspace/Seminar CI Paper/SemCI_Paper.tex" "/Users/jost/Workspace/Seminar CI Paper/SemCI_Paper.pdf" "SemCI_Paper" 1591555644
+  "/Users/jost/Workspace/Seminar CI Paper/SemCI_Paper.aux" 1591555644 561 6688b3bf9706ad17885fd18ce41708cf ""
+  "/Users/jost/Workspace/Seminar CI Paper/SemCI_Paper.tex" 1591555643 3677 c585a415ec400fa09f8188bc3e99d76a ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -80,12 +80,12 @@
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1583843226 4259636 dc58cd0050ec6cfb4797d1e0b3978eb4 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
   "IEEEtran.cls" 1440632924 288304 b67b6fc6c2abb39f9b461923f5199343 ""
-  "SemCI_Paper.aux" 1591534370 415 89a0a42994a18d591c0bc5ddcdc612e5 "pdflatex"
-  "SemCI_Paper.bbl" 1591482947 0 d41d8cd98f00b204e9800998ecf8427e "bibtex SemCI_Paper"
-  "SemCI_Paper.tex" 1591534558 3365 a0379c9fa4fbe8c7c5a8b5301f910cfd ""
+  "SemCI_Paper.aux" 1591555644 561 6688b3bf9706ad17885fd18ce41708cf "pdflatex"
+  "SemCI_Paper.bbl" 1591545677 0 d41d8cd98f00b204e9800998ecf8427e "bibtex SemCI_Paper"
+  "SemCI_Paper.tex" 1591555643 3677 c585a415ec400fa09f8188bc3e99d76a ""
   (generated)
-  "SemCI_Paper.log"
-  "/Users/jost/Workspace/Seminar CI Paper/SemCI_Paper.pdf"
-  "SemCI_Paper.aux"
   "/Users/jost/Workspace/Seminar CI Paper/SemCI_Paper.log"
+  "SemCI_Paper.log"
+  "SemCI_Paper.aux"
+  "/Users/jost/Workspace/Seminar CI Paper/SemCI_Paper.pdf"
   "SemCI_Paper.pdf"
