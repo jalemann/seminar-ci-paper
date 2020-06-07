@@ -29,17 +29,39 @@ describing usage examples and experiments from current research.
 \end{abstract}
 
 \begin{IEEEkeywords}
-component, formatting, style, styling, insert
+voting, reinforcement learning, multi-agent systems
 \end{IEEEkeywords}
 
 \section{Introduction}
-In multi-agent settings there are a number of mechanisms that allow for interaction between several agents.
-One of those mechanisms is voting which allows multiple agents to decide on a single action. 
+In multi-agent settings there is a number of mechanisms that allow for interaction between several agents.
+One of these mechanisms is voting which enables a distributed decision process where multiple agents decide which actions to take.
+However designing a voting mechanism is non-trivial since the voting system has to consider different aspects like security, fairness and robustness.
+Arrow's Impossibility Theorem even states that voting mechanisms cannot be designed to be completely fair.
+Ongoing research constantly tries to improve the security, robustness and fairness of voting mechanisms.
+/newline
+To give an overview over voting mechanisms in reinforcement learning Section \ref{2BasicPrinciples} introduces basic principles and constraints of voting systems.
+Section \ref{3RelatedWork} describes related work to highlight use cases of voting mechanisms in reinforcement learning as well as ongoing research trying to improve such mechanisms.
 
-\section{Related Work}
+
+\section{Basic Priniciples}\label{2BasicPrinciples}
+\begin{itemize}
+    \item Robert's Rules of Order (Newly Revised) (RONR)
+    \begin{itemize}
+        \item Set of rules for voting procedure
+    \end{itemize}
+    \item Arrow's Impossibility Theorem
+    \begin{itemize}
+        \item states that no rank-order electorial system can be designed to be perfectly fair matching these criterias:
+        \item If every voter prefers alternative X over alternative Y, then the group prefers X over Y.
+        \item If every voter’s preference between X and Y remains unchanged, then the group’s preference between X and Y also remains unchanged.
+        \item There is no “dictator”: no single voter possesses the power to always determine the group’s preference.
+    \end{itemize}
+\end{itemize}
+
+\section{Related Work}\label{3RelatedWork}
 
 \bibliographystyle{IEEtran}
-\bibliography{references}
+\bibliography{refs}
 
 \vspace{12pt}
 
