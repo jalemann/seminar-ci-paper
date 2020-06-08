@@ -47,10 +47,10 @@ In a democratic society choices are not made by a dictator but by taking the pre
 This concept of considering multiple individuals' preferences by using a voting mechanism to make choices can be transferred to multi-agent reinforcement learning systems.
 \newline
 However designing a voting mechanism is non-trivial since the voting system has to consider different aspects like security, fairness and robustness.
-Arrow's Impossibility Theorem even states that voting mechanisms cannot be designed to be completely fair.
+Arrow's Impossibility Theorem\cite{arrow2012social} for example states that no rank-order voting mechanisms can be designed to be completely fair.
 Ongoing research constantly tries to improve the security, robustness and fairness of voting mechanisms.
 \newline
-To give an overview over voting mechanisms in reinforcement learning Section \ref{2BasicPrinciples} introduces basic principles and constraints of voting systems.
+To give an overview over voting mechanisms in reinforcement learning Section \ref{2BasicPrinciples} introduces basic principles of social choice theory.
 Section \ref{3RelatedWork} describes related work to highlight use cases of voting mechanisms in reinforcement learning as well as ongoing research trying to improve such mechanisms.
 
 % BASIC PRINCIPLES
@@ -59,7 +59,7 @@ Section \ref{3RelatedWork} describes related work to highlight use cases of voti
 
 % Arrow's Impossibility Theorem
 \subsection{Arrow's Impossibility Theorem}
-Arrow's Impossibility Theorem is of great importance for the design of a voting mechanism. 
+Arrow's Impossibility Theorem is of great importance for the design of a voting mechanisms. It states that there cannot be a completely fair rank-order voting system. Meaning that every voting system that has the properties of unanimity and independece of irrelevant alternatives also contains a dictator which vote decides the preference of the society as a whole.
 
 \begin{itemize}
     \item Robert's Rules of Order (Newly Revised) (RONR)
@@ -81,7 +81,7 @@ Arrow's Impossibility Theorem is of great importance for the design of a voting 
     % Give a good structure to the current state of the art
 \section{Related Work}\label{3RelatedWork}
 
-\bibliographystyle{IEEtran}
+\bibliographystyle{IEEEtran}
 \bibliography{refs}
 
 \vspace{12pt}
