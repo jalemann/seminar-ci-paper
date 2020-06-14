@@ -57,13 +57,21 @@ Section \ref{3RelatedWork} describes related work to highlight use cases of voti
     % Tell the readers about definitions, foundations that are used
 \section{Basic Priniciples}\label{2BasicPrinciples}
 
-% Voting Systems
-\subsection{Different Voting Systems}
+% Voting Schemes
+\subsection{Different Voting Schemes}
 To discuss properties of voting systems we have to introduce those systems first.
+
+% Properties of Voting Schemes
+\subsection{Properties of Voting Schemes}
+\begin{itemize}
+    \item \textit{Unanimity}: If every voter prefers option X over option Y, then the society prefers X over Y.
+    \item \textit{Independence of irrelevant alternatives}: If every voter prefers option X over option Y and option Z is removed without changing the former relation, the societies preference of X over Y also remains unchanged.
+    \item \textit{No dictatorship}: No single voter posseses the power to always determine the group's preference.
+\end{itemize}
 
 % Arrow's Impossibility Theorem
 \subsection{Arrow's Impossibility Theorem}
-Arrow's Impossibility Theorem is of great importance for the design of a voting mechanisms. It states that there cannot be a completely fair rank-order voting system. Meaning no rank-order voting system (i.e. a voting system where preferences are resembled as the order of possible votes)
+Arrow's Impossibility Theorem is of great importance for the design of a voting mechanisms. It states that no rank-order voting scheme can fulfil the properties unanimity, independece of irrelevant alternatives and no dictatorship at the same time.
 
 \begin{itemize}
     \item Arrow's Impossibility Theorem
@@ -80,6 +88,7 @@ Arrow's Impossibility Theorem is of great importance for the design of a voting 
     % Outline benefits and downsides of other methods
     % Give a good structure to the current state of the art
 \section{Related Work}\label{3RelatedWork}
+
 
 \bibliographystyle{IEEEtran}
 \bibliography{refs}
