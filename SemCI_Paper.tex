@@ -28,9 +28,8 @@ jost.alemann@ovgu.de}
 
 %ABSTRACT
 \begin{abstract}
-This paper aims to deliver an overview over voting mechanisms used in reinforcement learning.
-Voting mechanisms are first introduced to the reader and then explained in more detail by
-describing usage examples and experiments from current research. 
+This paper aims to deliver an overview over how voting mechanisms can be used in reinforcement learning.
+Voting mechanisms and their properties are first introduced to the reader and then explained in more detail by describing their application in related work in the field of multi-agent systems and reinforcement learning.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -43,11 +42,12 @@ voting, reinforcement learning, multi-agent systems
     % Idea – What solution do you present
     % Outline – How do you explain your insight
 \section{Introduction}
-In a democratic society choices are not made by a dictator but by taking the preferences of the whole society into account. Each member of the society is entitled to cast a vote which represents it's preferences.
-This concept of considering multiple individuals' preferences by using a voting mechanism to make choices can be transferred to multi-agent reinforcement learning systems.
+In a democratic society choices are not made by a dictator but by taking the preferences of the whole society into account. Therefore each member of the society is entitled to cast a vote which represents it's preferences. Votes are then evaluated and a decision is derived by a given voting scheme. Plurality where the choice with the most votes wins, might be the most common voting scheme. Still there are many different voting schemes each of which can or cannot fulfil certain properties. This lies mainly in the subject of social choice theory and therefore is only described briefly if needed in the following.
 \newline
-However designing a voting mechanism is non-trivial since the voting system has to consider different aspects like security, fairness and robustness.
-Arrow's Impossibility Theorem\cite{arrow2012social} for example states that no rank-order voting mechanisms can be designed to be completely fair.
+The concept of considering multiple individuals' preferences by using a voting mechanism to make choices can be transferred to multi-agent reinforcement learning systems. This is motivated by the expectation that agents combine their limited perception and knowledge of the environment by deciding together. Therefore they are expected to obtain better results than agents that choose actions based on only their own perception.\cite{partalas2008hybrid}
+\newline
+However designing a voting mechanism is non-trivial since the voting system has to consider different aspects like security, fairness and robustness\cite{pitt2006voting}.
+Arrow's Impossibility Theorem even implies that no rank-order voting mechanisms can be designed to be completely fair. This will be explained later on in Section \ref{2BasicPrinciples}.
 Ongoing research constantly tries to improve the security, robustness and fairness of voting mechanisms.
 \newline
 To give an overview over voting mechanisms in reinforcement learning Section \ref{2BasicPrinciples} introduces basic principles of social choice theory.
@@ -57,15 +57,15 @@ Section \ref{3RelatedWork} describes related work to highlight use cases of voti
     % Tell the readers about definitions, foundations that are used
 \section{Basic Priniciples}\label{2BasicPrinciples}
 
+% Voting Systems
+\subsection{Different Voting Systems}
+To discuss properties of voting systems we have to introduce those systems first.
+
 % Arrow's Impossibility Theorem
 \subsection{Arrow's Impossibility Theorem}
-Arrow's Impossibility Theorem is of great importance for the design of a voting mechanisms. It states that there cannot be a completely fair rank-order voting system. Meaning that every voting system that has the properties of unanimity and independece of irrelevant alternatives also contains a dictator which vote decides the preference of the society as a whole.
+Arrow's Impossibility Theorem is of great importance for the design of a voting mechanisms. It states that there cannot be a completely fair rank-order voting system. Meaning no rank-order voting system (i.e. a voting system where preferences are resembled as the order of possible votes)
 
 \begin{itemize}
-    \item Robert's Rules of Order (Newly Revised) (RONR)
-    \begin{itemize}
-        \item Set of rules for voting procedure
-    \end{itemize}
     \item Arrow's Impossibility Theorem
     \begin{itemize}
         \item states that no rank-order electorial system can be designed to be perfectly fair matching these criterias:
