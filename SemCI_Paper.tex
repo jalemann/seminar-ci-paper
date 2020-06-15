@@ -28,7 +28,7 @@ jost.alemann@ovgu.de}
 
 %ABSTRACT
 \begin{abstract}
-This paper aims to deliver an overview over how voting mechanisms can be used in reinforcement learning.
+This paper aims to deliver an overview over how voting mechanisms can be incorporated in reinforcement learning.
 Voting mechanisms and their properties are first introduced to the reader and then explained in more detail by describing their application in related work in the field of multi-agent systems and reinforcement learning.
 \end{abstract}
 
@@ -46,8 +46,11 @@ In a democratic society choices are not made by a dictator but by taking the pre
 \newline
 The concept of considering multiple individuals' preferences by using a voting mechanism to make choices can be transferred to multi-agent reinforcement learning systems. This is motivated by the expectation that agents combine their limited perception and knowledge of the environment by deciding together. Therefore they are expected to obtain better results than agents that choose actions based on only their own perception.\cite{partalas2008hybrid}
 \newline
-However designing a voting mechanism is non-trivial since the voting system has to consider different aspects like security, fairness and robustness\cite{pitt2006voting}.
-Arrow's Impossibility Theorem even implies that no rank-order voting mechanisms can be designed to be completely fair. This will be explained later on in Section \ref{2BasicPrinciples}.
+Since learning agents try to optimise their own reward, they might learn to act selfish\cite{carr2008peer} or even learn to use strategic voting to exploit the voting system\cite{pitt2006voting} for that purpose.
+Thus the design of a voting mechanism incorporated in a multi-agent reinforcement learning system is non-trivial.
+To avoid extensive selfish behaviour in agents several constraints can be introduced by modifying the reward function or voting system.
+The possibility to exploit a voting system depends on the chosen voting scheme.
+Unfortunately Arrow's Impossibility Theorem implies that no voting scheme can be designed to be completely fair. This means there is always a way in which agents could exploit such a voting scheme by finding a certain voting strategy. Arrow's Impossibility Theorem will be explained later on in Section \ref{2BasicPrinciples}.
 Ongoing research constantly tries to improve the security, robustness and fairness of voting mechanisms.
 \newline
 To give an overview over voting mechanisms in reinforcement learning Section \ref{2BasicPrinciples} introduces basic principles of social choice theory.
@@ -64,24 +67,14 @@ To discuss properties of voting systems we have to introduce those systems first
 % Properties of Voting Schemes
 \subsection{Properties of Voting Schemes}
 \begin{itemize}
-    \item \textit{Unanimity}: If every voter prefers option X over option Y, then the society prefers X over Y.
+    \item \textit{Pareto efficiency}: If every voter prefers option X over option Y, then the society prefers X over Y.
     \item \textit{Independence of irrelevant alternatives}: If every voter prefers option X over option Y and option Z is removed without changing the former relation, the societies preference of X over Y also remains unchanged.
-    \item \textit{No dictatorship}: No single voter posseses the power to always determine the group's preference.
+    \item \textit{Non-dictatorship}: No single voter posseses the power to always determine the group's preference.
 \end{itemize}
 
 % Arrow's Impossibility Theorem
 \subsection{Arrow's Impossibility Theorem}
-Arrow's Impossibility Theorem is of great importance for the design of a voting mechanisms. It states that no rank-order voting scheme can fulfil the properties unanimity, independece of irrelevant alternatives and no dictatorship at the same time.
-
-\begin{itemize}
-    \item Arrow's Impossibility Theorem
-    \begin{itemize}
-        \item states that no rank-order electorial system can be designed to be perfectly fair matching these criterias:
-        \item If every voter prefers alternative X over alternative Y, then the group prefers X over Y.
-        \item If every voter’s preference between X and Y remains unchanged, then the group’s preference between X and Y also remains unchanged.
-        \item There is no “dictator”: no single voter possesses the power to always determine the group’s preference.
-    \end{itemize}
-\end{itemize}
+Arrow's Impossibility Theorem is of great importance for the design of a voting mechanisms. It states that no rank-order voting scheme can fulfil the properties Pareto efficiency, independece of irrelevant alternatives and non-dictatorship at the same time.
 
 % RELATED WORK
     % How have other researchers tackled the problem
