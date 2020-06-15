@@ -55,12 +55,12 @@ Unfortunately Arrow's Impossibility Theorem implies that no voting scheme can be
 To give an overview over voting schemes and their possible properties Section \ref{2BasicPrinciples} introduces basic principles of social choice theory as far as they are required to understand the concepts described later on.
 Section \ref{3RelatedWork} then shows related work to give example  applications of voting mechanisms incorporated in reinforcement learning.
 Additionally used methods to avoid exploitation or selfish behaviour of agents will be highlighted.
-As a conclusion different incorporations of voting mechanisms in multi-agent reinforcement learning settings are briefly compared in Section \ref{4Conclusion}.
+As a conclusion different applications of voting mechanisms in multi-agent reinforcement learning settings are briefly compared in Section \ref{4Conclusion}.
 
 % BASIC PRINCIPLES
     % Tell the readers about definitions, foundations that are used
 \section{Basic Priniciples}\label{2BasicPrinciples}
-
+The following gives an introduction to basic principles of social choice theory that are needed to understand the concepts described in \ref{3RelatedWork}.
 % Voting Schemes
 \subsection{Different Voting Schemes}
 To discuss properties of voting systems we have to introduce those systems first.
@@ -68,14 +68,22 @@ To discuss properties of voting systems we have to introduce those systems first
 % Properties of Voting Schemes
 \subsection{Properties of Voting Schemes}
 \begin{itemize}
-    \item \textit{Pareto efficiency}: If every voter prefers option X over option Y, then the society prefers X over Y.
-    \item \textit{Independence of irrelevant alternatives}: If every voter prefers option X over option Y and option Z is removed without changing the former relation, the societies preference of X over Y also remains unchanged.
-    \item \textit{Non-dictatorship}: No single voter posseses the power to always determine the group's preference.
+    \item \textit{Pareto efficiency}:\\
+    If every voter prefers option X over option Y, then the society prefers X over Y.
+    \item \textit{Independence of irrelevant alternatives}:\\
+    If every voter prefers option X over option Y and option Z is removed without changing the former relation, the societies preference of X over Y also remains unchanged.
+    \item \textit{Non-dictatorship}:\\
+    No single voter posseses the power to always determine the group's preference.
 \end{itemize}
 
 % Arrow's Impossibility Theorem
-\subsection{Arrow's Impossibility Theorem}
-Arrow's Impossibility Theorem is of great importance for the design of a voting mechanisms. It states that no rank-order voting scheme can fulfil the properties Pareto efficiency, independece of irrelevant alternatives and non-dictatorship at the same time.
+\subsection{Theorems}
+\begin{itemize}
+    \item \textit{Arrow's Impossibility Theorem}\cite{arrow2012social}:\\
+    Arrow's Impossibility Theorem states that no rank-order voting scheme can fulfil the properties Pareto efficiency, independece of irrelevant alternatives and non-dictatorship at the same time.
+    Meaning that every voting scheme can be exploited by strategic voting.\cite{pitt2006voting}
+\end{itemize}
+
 
 % RELATED WORK
     % How have other researchers tackled the problem
