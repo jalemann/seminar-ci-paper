@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.10)  15 JUN 2020 22:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.10)  15 JUN 2020 23:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -448,22 +448,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-Underfull \hbox (badness 1424) in paragraph at lines 105--127
+Underfull \hbox (badness 1424) in paragraph at lines 105--139
 \OT1/ptm/m/n/10 im-plied pos-si-bil-ity to ma-nip-u-late the vot-ing scheme by
  []
 
 
-Underfull \hbox (badness 4556) in paragraph at lines 105--127
+Underfull \hbox (badness 4556) in paragraph at lines 105--139
 \OT1/ptm/m/n/10 The au-thors use Q-learning as re-in-force-ment learn-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--127
+Underfull \hbox (badness 10000) in paragraph at lines 105--139
 
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 105--127
+Underfull \hbox (badness 1888) in paragraph at lines 105--139
 \OT1/ptm/m/n/10 A dif-fer-ent set-ting and con-cept for the use of vot-ing
  []
 
@@ -479,19 +479,17 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
-
-] (/Users/jost/Workspace/Seminar CI Paper/SemCI_Paper.aux) ) 
+[3] (/Users/jost/Workspace/Seminar CI Paper/SemCI_Paper.aux) ) 
 Here is how much of TeX's memory you used:
  4376 strings out of 492616
  64104 string characters out of 6129481
- 144615 words of memory out of 5000000
+ 149615 words of memory out of 5000000
  8236 multiletter control sequences out of 15000+600000
  35842 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,8n,35p,1225b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,8n,35p,1365b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/Users/jost/Workspace/Seminar CI Paper/SemCI_Paper.pdf" (3 pages, 107327 bytes).
+Output written on "/Users/jost/Workspace/Seminar CI Paper/SemCI_Paper.pdf" (3 pages, 109398 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream
