@@ -10,7 +10,7 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Voting Mechanisms in Reinfocement Learning}
+\title{Voting Mechanisms in Reinforcement Learning}
 
 \author{\IEEEauthorblockN{Jost Alemann}
 \IEEEauthorblockA{\textit{Institute of intelligent \& cooperating systems} \\
@@ -30,6 +30,7 @@ jost.alemann@ovgu.de}
 \begin{abstract}
 This paper aims to deliver an overview over how voting mechanisms can be incorporated in reinforcement learning.
 Voting mechanisms and their properties are first introduced to the reader and then explained in more detail by describing their application in related work in the field of multi-agent systems and reinforcement learning.
+Additionally advantages resulting from the incorporation of voting mechanisms in reinforcement learning systems concluded as they are shown in related work.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -59,13 +60,13 @@ As a conclusion different applications of voting mechanisms in multi-agent reinf
 
 % BASIC PRINCIPLES
     % Tell the readers about definitions, foundations that are used
-\section{Basic Priniciples}\label{2BasicPrinciples}
+\section{Basic Principles}\label{2BasicPrinciples}
 The following gives an introduction to basic principles of social choice theory that are needed to understand the concepts described in \ref{3RelatedWork}.
 % Voting Schemes
 \subsection{Different Voting Schemes}
 To discuss properties of voting systems we have to introduce those systems first.
 \begin{itemize}
-    \item \textit{Plurailty vote}:\\
+    \item \textit{Plurality vote}:\\
     Voting scheme in which each voter is allowed to cast a constant number of votes and the alternative with the most votes is chosen.
 
     \item \textit{Majority rule}:\\
@@ -85,14 +86,14 @@ To discuss properties of voting systems we have to introduce those systems first
     \item \textit{Independence of irrelevant alternatives}:\\
     If every voter prefers option X over option Y and option Z is removed without changing the former relation, the societies preference of X over Y also remains unchanged.
     \item \textit{Non-dictatorship}:\\
-    No single voter posseses the power to always determine the group's preference.
+    No single voter possesses the power to always determine the group's preference.
 \end{itemize}
 
 % Arrow's Impossibility Theorem
 \subsection{Theorems}
 \begin{itemize}
     \item \textit{Arrow's Impossibility Theorem}\cite{arrow2012social}:\\
-    Arrow's Impossibility Theorem states that no rank-order voting scheme can fulfil the properties Pareto efficiency, independece of irrelevant alternatives and non-dictatorship at the same time.
+    Arrow's Impossibility Theorem states that no rank-order voting scheme can fulfil the properties Pareto efficiency, independence of irrelevant alternatives and non-dictatorship at the same time.
     Meaning that every voting scheme can be exploited by strategic voting.\cite{pitt2006voting}
 \end{itemize}
 
@@ -114,7 +115,7 @@ $score_{alternative}=\max(0,\ x-(r_{alternative}-1))$\\
 Where $r$ again represents the number of the alternatives rank and $x$ is the number of responsible agents of the population. Because responsible agents rank other responsible agents higher than selfish agents, selfish agents receive $0$ Borda points off of responsible agents' votes. This way the reputation constraint which is represented by a voting history is used to reduce the Borda score of selfish agents even when they always rank themselves first.
 \newline
 The authors use Q-learning as reinforcement learning algorithm. In this system they only have two Q-values because the there is only one state and the two actions behaving either responsible or acting selfish.
-As a result the authors run simulations to show that responsible agents get more satisfaction than selfish acting agents. Therefore they initialise the Q-values so that the value for a responsible action is greater than the one for a selfish action. At a certain timestep they then introduce selfish acting individuals to the population by adding agents whose Q-value for a selfish action is greater than the one for a responsible action. They observe if the newly introduced selfish agents learn to act responsible or if they stay selfish and monitor their satisfaction (i.e. a score representing whether an agent is successfull in the system or not).
+As a result the authors run simulations to show that responsible agents get more satisfaction than selfish acting agents. Therefore they initialise the Q-values so that the value for a responsible action is greater than the one for a selfish action. At a certain time step they then introduce selfish acting individuals to the population by adding agents whose Q-value for a selfish action is greater than the one for a responsible action. They observe if the newly introduced selfish agents learn to act responsible or if they stay selfish and monitor their satisfaction (i.e. a score representing whether an agent is successful in the system or not).
 \newline
 The authors show that selfish agents can either learn to adapt the responsible behaviour of the population and receive greater satisfaction or stay selfish and end up with a low satisfaction in the system. This means that their concept of adding reputation as a social constraint and modifying the voting scheme in a multi-agent reinforcement learning setting can ensure that agents learn to not manipulate a voting mechanism by strategical voting for their own purposes but to cooperate with other agents by voting in a responsible manner.
 \newline
@@ -123,9 +124,9 @@ A different setting and concept for the use of voting mechanisms in reinforcemen
 \newline
 Additionally they introduce strategies which are combinations of high level actions assigned to an individual agent. An example named by the authors that would fit into the setting would be that one predator moves closer to the prey while another agent stays near the prey. It should be noted that as far as this work goes, strategies have to be designed manually and that their quality might heavily influence the performance of the agents.
 \newline
-If multiple predators are cooperating to catch the prey they do not choose a action individually but instead vote for a strategy that is then executed by all agents. The agents generally use majority rule as the voting scheme to decide on which strategy follow. This results in the difficulty that in settings where only a small number of predators cooperate there is only a small probability that a strategy receives the majority of votes. The authors tackle this problem with choosing a rank-based voting scheme instead. All predators rank the strategies based on their corresponding Q-value where the greatest Q-values are ranked better and smaller Q-values receive worse ranks. The ranks of each agent's ranking are averaged so that each strategy receives a total ranking score. Since rank $1$ would represents the greatest Q-value in a ranking, the strategy with the lowest average ranking score will be chosen. Another criterion has to be defined which decides on a single strategy if multiple strategies tie by both receiving the lowest average ranking score. For example the predators rankings could be weighted based on each predator's distance to the prey (in this case predators that are near to the prey would receive a lower weight than distant predators because the smallest value is chosen).
+If multiple predators are cooperating to catch the prey they do not choose an action individually but instead vote for a strategy that is then executed by all agents. The agents generally use majority rule as the voting scheme to decide on which strategy follow. This results in the difficulty that in settings where only a small number of predators cooperate there is only a small probability that a strategy receives the majority of votes. The authors tackle this problem with choosing a rank-based voting scheme instead. All predators rank the strategies based on their corresponding Q-value where the greatest Q-values are ranked better and smaller Q-values receive worse ranks. The ranks of each agent's ranking are averaged so that each strategy receives a total ranking score. Since rank $1$ would represents the greatest Q-value in a ranking, the strategy with the lowest average ranking score will be chosen. Another criterion has to be defined which decides on a single strategy if multiple strategies tie by both receiving the lowest average ranking score. For example the predators rankings could be weighted based on each predator's distance to the prey (in this case predators that are near to the prey would receive a lower weight than distant predators because the smallest value is chosen).
 \newline
-This work does not use reputation or another social constraint to discourage agents from manipulating the voting scheme by strategic voting like the work discussed before. Such a constraint is not required in this work because each predator agent is encouraged to cooperate with other predators by giving each predator the same reward. In this case a selfish acting predator agent is also a agent that cooperates with other predator agents. To heavily encourage predators to cooperate and to vote on and use strategies the authors chose to add a different constraint. Only cooperating predators receive a reward whenever the prey is caught. Predators that act individually are not rewarded.
+This work does not use reputation or another social constraint to discourage agents from manipulating the voting scheme by strategic voting like the work discussed before. Such a constraint is not required in this work because each predator agent is encouraged to cooperate with other predators by giving each predator the same reward. In this case a selfish acting predator agent is also an agent that cooperates with other predator agents. To heavily encourage predators to cooperate and to vote on and use strategies the authors chose to add a different constraint. Only cooperating predators receive a reward whenever the prey is caught. Predators that act individually are not rewarded.
 \newline
 As a result it is essential to define a mechanism that specifies whether agents are cooperating and which agents cooperate with which other agents. The authors state that this mechanism again has to be chosen per setting. As an example in the considered predator-prey setting cooperating groups of agents could be chosen by distance to the prey.
 \newline
@@ -147,3 +148,4 @@ The related work shows that voting mechanisms can be incorporated into multi-age
 \vspace{12pt}
 
 \end{document}
+
