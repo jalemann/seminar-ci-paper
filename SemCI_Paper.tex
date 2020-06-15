@@ -66,11 +66,11 @@ The following gives an introduction to basic principles of social choice theory 
 To discuss properties of voting systems we have to introduce those systems first.
 \begin{itemize}
     \item \textit{Plurailty vote}:\\
-    Voting scheme in which each voter is allowed to only cast one vote and the alternative with the most votes is chosen.
+    Voting scheme in which each voter is allowed to cast a constant number of votes and the alternative with the most votes is chosen.
     \item \textit{Borda Count}:\\
     Voting scheme in which all alternatives are ranked by each voter. Each vote consists of the ranked list of alternatives and a corresponding score for each ranked alternative. Let $n$ be the total number of alternatives and let $r$ be the assigned rank of an alternative in a single vote. The score is then calculated as following:\\
     $score_{alternative}=n-(r_{alternative}-1)$\\
-    Each alternative gets a total score by adding up it's scores of each vote. This way higher ranked alternatives get a higher score per vote.
+    Each alternative gets a total score by adding up it's scores of each vote. This way higher ranked alternatives get a greater score per vote and alternatives that are more often ranked high receive a greater total score. At the end the alternative with the greatest total score is chosen.
 \end{itemize}
 
 % Properties of Voting Schemes
@@ -103,10 +103,11 @@ Because of Arrow's Impossibility Theorem and the thereby implied possibility to 
 Thus they add a reputation system consisting of each agent's voting history to the voting process. Responsible acting agents only vote for other agents with a responsible voting history. This works as a constraint for selfish behaviour because agents that always vote selfish will not be voted except by themselves and therefore receive no reward and eventually act responsible in the future.\\
 The voting mechanism consists of two phases. In the first phase all agents vote on a threshold value $\tau$ that specifies how many votes a proposal requires to be accepted. A $\tau$ that is too low leads to many accepted requests and the global resource storage being bankrupted. On the other hand a $\tau$ that is too high leads to only few accepted requests and unsatisfied agents changing their strategy to get a reward in the future.
 Threshold $\tau$ is decided in two rounds. In round one all agents propose a suggestion for value $\tau$. In round two all agents cast a vote for one of the two most common suggestions.
-Resource reallocations are decided in phase two of the voting mechanism. First all agents propose a request or offer to the global resource storage. For simplicity reasons the authors only consider fixed value requests of resources. Then each agent votes on which proposal to accept. The authors found that a plurality voting scheme
+Resource reallocations are decided in phase two of the voting mechanism. First all agents propose a request or offer to the global resource storage. For simplicity reasons the authors only consider fixed value requests of resources. Then each agent votes on which proposal to accept. The authors found that a plurality voting scheme for the resource reallocation does not discourage selfish behaviour. To solve this the authors used a Borda Count voting scheme instead which forces the agents to focus less on themselves but more on the opinion on their neighbours.
 
 % CONCLUSION
 \section{Conclusion}\label{4Conclusion}
+
 
 \bibliographystyle{IEEEtran}
 \bibliography{refs}
