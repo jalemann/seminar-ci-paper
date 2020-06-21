@@ -132,7 +132,7 @@ As a result it is essential to define a mechanism that specifies whether agents 
 \newline
 The authors expect predators that learn to vote on strategies which they execute perform better than individual learning predators. They compare an independent learners approach, the voting reinforcement learning approach and a hybrid of both approaches with each other.
 The hybrid approach uses the Sparse Tabular Q-learning algorithm.
-The individual learner and the approach as well as the voting reinforcement learning approach use Q-learning.
+The individual learner approach as well as the voting reinforcement learning approach use Q-learning.
 In the individual learner approach each agent learns it's own Q-values that are not shared with other agents. Also the agents are not taking actions executed by other agents into account.
 In the voting reinforcement learning approach the agents instead learn own Q-values if they are not currently cooperating with other agents but are learning shared Q-values when they are in a cooperating group.
 The performance of each approach is measured in the average time it takes the predators to catch the prey when using given reinforcement learning algorithm.
