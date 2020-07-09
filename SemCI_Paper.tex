@@ -73,8 +73,10 @@ To discuss properties of voting systems we have to introduce those systems first
     Voting scheme that extends the Plurality vote voting scheme. The alternative with the most votes is chosen only if it also receives the majority of the total votes (i.e. if it also receives more than $50\%$ of the total votes). For voting scenarios with just two alternatives this is the same as Plurality vote. For voting scenarios with more than two alternatives, the alternative with the most votes could receive less than $50\%$ of the total votes. In this case no alternative is chosen or another decision making process is initialised (e.g. random choice or default case).
 
     \item \textit{Borda Count}:\\
-    Voting scheme in which all alternatives are ranked by each voter. Each vote consists of the ranked list of alternatives and a corresponding score for each ranked alternative. Let $n$ be the total number of alternatives and let $r$ be the assigned rank of an alternative in a single vote (highest rank is one, lowest is $n$). The score is then calculated as following:\\
-    $score_{alternative}=n-(r_{alternative}-1)$\\
+    Voting scheme in which all alternatives are ranked by each voter. Each vote consists of the ranked list of alternatives and a corresponding score for each ranked alternative. Let $n$ be the total number of alternatives and let $r$ be the assigned rank of an alternative in a single vote (highest rank is one, lowest is $n$). The score is then calculated by \eqref{eq:BordaCount}.
+    \begin{equation}\label{eq:BordaCount}
+        score_{alternative}=n-(r_{alternative}-1)
+    \end{equation}
     Each alternative gets a total score by adding up it's scores of each vote. This way higher ranked alternatives get a higher score per vote and alternatives that are more often ranked high receive a higher total score. At the end the alternative with the highest total score is chosen.
 \end{itemize}
 
@@ -110,8 +112,10 @@ Thus they add a reputation system consisting of each agent's voting history to t
 \newline
 The voting mechanism consists of two phases. In the first phase all agents vote on a threshold value $\tau$ that specifies how many votes a proposal requires to be accepted. A $\tau$ that is too low leads to many accepted requests and the global resource storage being bankrupted. On the other hand a $\tau$ that is too high leads to only few accepted requests and unsatisfied agents changing their strategy to get a reward in the future.
 Threshold $\tau$ is decided in two rounds. In round one all agents propose a suggestion for value $\tau$. In round two all agents cast a vote for one of the two most common suggestions.
-Resource reallocations are decided in phase two of the voting mechanism. First all agents propose a request or offer to the global resource storage. For simplicity reasons the authors only consider fixed value requests of resources. Then each agent votes on which proposal to accept. The authors found that a plurality voting scheme for the resource reallocation does not discourage selfish behaviour. To solve this the authors instead use a modified version of the Borda Count voting scheme which forces the agents to focus less on themselves but instead on the opinion on their neighbours. The modified equation for the score of an alternative on a single vote is specified as follows:\\
-$score_{alternative}=\max(0,\ x-(r_{alternative}-1))$\\
+Resource reallocations are decided in phase two of the voting mechanism. First all agents propose a request or offer to the global resource storage. For simplicity reasons the authors only consider fixed value requests of resources. Then each agent votes on which proposal to accept. The authors found that a plurality voting scheme for the resource reallocation does not discourage selfish behaviour. To solve this the authors instead use a modified version of the Borda Count voting scheme which forces the agents to focus less on themselves but instead on the opinion on their neighbours. Equation \eqref{eq:ModifiedBordaCount} is a modified version of the Borda count equation \eqref{eq:BordaCount}.
+\begin{equation}\label{eq:ModifiedBordaCount}
+    score_{alternative}=\max(0,\ x-(r_{alternative}-1))
+\end{equation}
 Where $r$ again represents the number of the alternatives rank and $x$ is the number of responsible agents of the population. Selfish agents receive no Borda points from responsible agents' votes because responsible agents rank other responsible agents higher than selfish agents. As a result the reputation constraint which is represented by a voting history is used to reduce the Borda score of selfish agents even when they always rank themselves first.
 \newline
 The authors use Q-learning as reinforcement learning algorithm. In this system they only have two Q-values because there is only one state and the two actions behaving either responsible or acting selfish.
