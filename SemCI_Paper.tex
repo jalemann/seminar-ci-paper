@@ -122,8 +122,14 @@ Where $r$ again represents the number of the alternatives rank and $x$ is the nu
 The authors use Q-learning as reinforcement learning algorithm. In this system they only have two Q-values because there is only one state and the two actions behaving either responsible or acting selfish.
 As a result the authors run simulations to show that responsible agents get more satisfaction than selfish acting agents. Therefore they initialise the Q-values so that the value for a responsible action is larger than the one for a selfish action. At a certain time step they then introduce selfish acting individuals to the population by adding agents whose Q-value for a selfish action is larger than the one for a responsible action. They observe whether the newly introduced selfish agents learn to act responsible or whether they stay selfish and monitor their satisfaction (i.e. a score representing whether an agent is successful in the system or not).
 \newline
-The authors show that selfish agents can either learn to adapt the responsible behaviour of the population and receive greater satisfaction or stay selfish and end up with a low satisfaction in the system. This means that their concept of adding reputation as a social constraint and modifying the voting scheme in a multi-agent reinforcement learning setting can ensure that agents learn to not manipulate a voting mechanism by strategical voting for their own purposes but to cooperate with other agents by voting in a responsible manner.
-\newline
+The authors show that selfish agents can either learn to adapt the responsible behaviour of the population and receive greater satisfaction or stay selfish and end up with a low satisfaction in the system. This means that their concept of adding reputation as a social constraint and modifying the voting scheme in a multi-agent reinforcement learning setting can ensure that agents learn to not manipulate a voting mechanism by strategical voting for their own purposes but to cooperate with other agents by voting in a responsible manner. Some results of Carr et al. \cite{carr2008peer} can be seen in Fig. \ref{SelfishVSResponsibleAgents}.
+
+\begin{figure}[bt]
+    \centering
+    \includegraphics[width=0.45\textwidth]{Qvalues.png}
+    \caption{Q Value estimates of the Responsible Agents and the initially Selfish Agents}
+    \label{SelfishVSResponsibleAgents}
+\end{figure}
 
 \subsection{Voting and Multi-Agent Strategies}
 A different setting and concept for the use of voting mechanisms in reinforcement learning is explained in the work of Partalas et al. \cite{partalas2008hybrid}. They consider a multi-agent setting in which the agents are predators that learn to catch a prey.
