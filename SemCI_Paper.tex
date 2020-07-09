@@ -142,7 +142,30 @@ The individual learner approach as well as the voting reinforcement learning app
 In the individual learner approach each agent learns it's own Q-values that are not shared with other agents. Also the agents are not taking actions executed by other agents into account.
 In the voting reinforcement learning approach the agents instead learn own Q-values if they are not currently cooperating with other agents but are learning shared Q-values when they are in a cooperating group.
 The performance of each approach is measured in the average time it takes the predators to catch the prey when using given reinforcement learning algorithm.
-The authors also consider different board sizes and different numbers of predator agents. They show that the voting reinforcement learning approach performs better than the other approaches in each tested setting.
+The authors also consider different board sizes and different numbers of predator agents. They show that the voting reinforcement learning approach performs better than the other approaches in each tested setting. Some results can be seen in Table \ref{table:AvgCaptureTimes}.
+
+\begin{table}[tb]
+    \centering
+    \caption{Average capture times for different values of the predator and grid size parameters}
+    \begin{tabular}{c c c c}
+        \hline
+        Predators & RL-Fusing & IL & STQ \\
+        \hline
+        3 & 10.17 & 17.26 & 13.49 \\
+        4 & 7.81 & 13.24 & 13.01 \\
+        5 & 6.7 & 10.77 & 10.16 \\
+        \hline
+        \\
+        \hline
+        Grid size & RL-Fusing & IL & STQ \\
+        \hline
+        10 & 7.28 & 11.62 & 10.5 \\
+        12 & 10.17 & 17.26 & 13.49 \\
+        14 & 14.05 & 22.79 & 22.04 \\
+        \hline
+    \end{tabular}
+    \label{table:AvgCaptureTimes}
+\end{table}
 
 % CONCLUSION
 \section{Conclusion}\label{4Conclusion}
