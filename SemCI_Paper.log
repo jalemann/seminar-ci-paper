@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.10)  9 JUL 2020 22:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.10)  9 JUL 2020 22:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -450,11 +450,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 Underfull \hbox (badness 4556) in paragraph at lines 106--140
 \OT1/ptm/m/n/10 The au-thors use Q-learning as re-in-force-ment learn-ing
- []
-
-
-Underfull \hbox (badness 1762) in paragraph at lines 106--140
-\OT1/ptm/m/n/10 time step they then in-tro-duce self-ish act-ing in-di-vid-u-als
  []
 
 
