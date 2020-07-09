@@ -103,7 +103,7 @@ To discuss properties of voting systems we have to introduce those systems first
     % Outline benefits and downsides of other methods
     % Give a good structure to the current state of the art
 \section{Related Work}\label{3RelatedWork}
-H. Carr, J. Pitt and A. Artikis consider a multi-agent setting in their work \cite{carr2008peer} from 2008 in which the environment has limited resources that are requested and later reallocated by the agents. All other agents then decide which proposals are accepted by voting to redistribute the global resources.
+Carr et al. consider a multi-agent setting in their work \cite{carr2008peer} in which the environment has limited resources that are requested and later reallocated by the agents. All other agents then decide which proposals are accepted by voting to redistribute the global resources.
 \newline
 Each agent is considered to be capable of either responsible or selfish behaviour because of Arrow's Impossibility Theorem and the thereby implied possibility to manipulate the voting scheme by strategic voting. The authors point out that selfish behaviour is very likely in systems without social constraints.
 Thus they add a reputation system consisting of each agent's voting history to the voting process. Responsible acting agents only vote for other agents with a responsible voting history. This works as a constraint for selfish behaviour because agents that always vote selfish will not be voted except by themselves and therefore receive no reward and eventually act responsible in the future.
@@ -120,7 +120,7 @@ As a result the authors run simulations to show that responsible agents get more
 The authors show that selfish agents can either learn to adapt the responsible behaviour of the population and receive greater satisfaction or stay selfish and end up with a low satisfaction in the system. This means that their concept of adding reputation as a social constraint and modifying the voting scheme in a multi-agent reinforcement learning setting can ensure that agents learn to not manipulate a voting mechanism by strategical voting for their own purposes but to cooperate with other agents by voting in a responsible manner.
 \newline
 \newline
-A different setting and concept for the use of voting mechanisms in reinforcement learning is explained in the work of I. Partalas, I. Feneris and I. Vlahavas from 2008 \cite{partalas2008hybrid}. They consider a multi-agent setting in which the agents are predators that learn to catch a prey.
+A different setting and concept for the use of voting mechanisms in reinforcement learning is explained in the work of Partalas et al. \cite{partalas2008hybrid}. They consider a multi-agent setting in which the agents are predators that learn to catch a prey.
 \newline
 Additionally they introduce strategies which are combinations of high level actions assigned to an individual agent. An example named by the authors that would fit into the setting would be that one predator moves closer to the prey while another agent stays near the prey. It should be noted that as far as this work goes, strategies have to be designed manually and that their quality might heavily influence the performance of the agents.
 \newline
